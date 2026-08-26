@@ -1,11 +1,13 @@
 ﻿@page
 @model KCalller.Pages.ProductModel
 @{
+    ViewData["Title"] = "Produktübersicht";
 }
 
-<div>
-    <h1 class="display-4">Products</h1>
-    <a asp-page="/CreateProduct" class="btn btn-primary">Create Product</a>
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="display-4">Produkte</h2>
+    <a asp-page="/CreateProduct" class="btn btn-primary">Neues Produkt</a>
+    
 </div>
 @if (!Model.Products.Any())
 {
